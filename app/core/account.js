@@ -9,8 +9,8 @@ function AccountManager(options) {
 
 AccountManager.prototype.create = function(provider, options, cb) {
 
-    console.log('New account registration starts now ... ' + '\n');
-    console.log('Starting @ :' + new Date());
+    console.log('New account registration starts now ...'); //svb
+    console.log('Starting @ :' + new Date() + '\n'); //svb
     var User = mongoose.model('User');
     var user = new User({ provider: provider });
 
@@ -18,9 +18,12 @@ AccountManager.prototype.create = function(provider, options, cb) {
         user.set(key, options[key]);
     });
 
-    console.log('New account registration completed!' + '\n');
-    console.log('Completed @ :' + new Date());
+    console.log('Provided options :' + options); //svb
+
+    console.log('New account registration completed!'); //svb
+    console.log('Completed @ :' + new Date() + '\n'); //svb
     user.save(cb);
+    console.log('Registration SAVED successfully!!!' + '\n'); //svb
 };
 
 AccountManager.prototype.update = function(id, options, cb) {

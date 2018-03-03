@@ -241,9 +241,13 @@ module.exports = function() {
                 displayName: fields.displayName || fields.displayname || fields['display-name']
             };
 
+            console.log('New account: \n' + JSON.stringify(data) + '\n'); //svb
+
             core.account.create('local', data, function(err) {
+                console.log('Checking if account creation error.');  // svb
                 if (err) {
                     var message = 'Sorry, we could not process your request';
+                    console.log(message); // svb
                     // User already exists
                     if (err.code === 11000) {
                         message = 'Email has already been taken';

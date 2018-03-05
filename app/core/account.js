@@ -18,7 +18,7 @@ AccountManager.prototype.create = function(provider, options, cb) {
         user.set(key, options[key]);
     });
 
-    console.log('Provided options :' + JSON.stringify(options) '\n'); //svb
+    console.log('Provided options :' + JSON.stringify(options) + '\n'); //svb
 
     console.log('New account registration completed!'); //svb
     console.log('Completed @ :' + new Date() + '\n'); //svb

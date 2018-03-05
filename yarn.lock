@@ -3347,9 +3347,9 @@ mongoose-unique-validator@~0.6.2:
     eslint "^1.6.0"
     mocha "^2.3.3"
 
-"mongoose-validate@https://github.com/Codefresh-Examples/mongoose-validate.git":
+"mongoose-validate@~0.0.5":
   version "0.0.5"
-  resolved "https://github.com/Codefresh-Examples/mongoose-validate.git#480564ddac1d0664aa3361685c4d3109f4e21818"
+  resolved "https://registry.yarnpkg.com/mongoose/-/mongoose-validate-0.0.5.tgz#8f8dab5c56f7f78a39ee2348cdd451d61d86f94d"
   dependencies:
     validator "0.4.x"
 

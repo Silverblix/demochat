@@ -821,14 +821,11 @@ connect-assets@^5.0.1:
     postcss "5.0.21"
     uglify-js "2.6.2"
 
-connect-mongo@^0.8.2:
-  version "0.8.2"
-  resolved "https://registry.yarnpkg.com/connect-mongo/-/connect-mongo-0.8.2.tgz#c92878eec0c5a5a6625b79a0c214f37f861fc6e0"
+connect-mongo@2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/connect-mongo/-/connect-mongo-2.0.1.tgz#514d649cff1d5d5546c087193245bb54ff5b703b"
   dependencies:
-    debug ">= 0.7.0"
-    depd ">= 0.4.0"
-    lodash "*"
-    mongodb ">= 1.2.0 <2.1.0"
+    mongodb "^2.0.36
 
 connect@3.4.0:
   version "3.4.0"
@@ -1426,30 +1423,30 @@ expand-tilde@^2.0.2:
   dependencies:
     homedir-polyfill "^1.0.1"
 
-express-session@~1.11.2:
+express-session@~1.14.0:
   version "1.11.3"
-  resolved "https://registry.yarnpkg.com/express-session/-/express-session-1.11.3.tgz#5cc98f3f5ff84ed835f91cbf0aabd0c7107400af"
+  resolved "https://registry.yarnpkg.com/express-session/-/express-session-1.14.0.tgz#5cc98f3f5ff84ed835f91cbf0aabd0c7107400af"
   dependencies:
-    cookie "0.1.3"
+    cookie "0.3.1"
     cookie-signature "1.0.6"
-    crc "3.3.0"
+    crc "3.4.0"
     debug "~2.2.0"
-    depd "~1.0.1"
-    on-headers "~1.0.0"
-    parseurl "~1.3.0"
-    uid-safe "~2.0.0"
+    depd "~1.1.0"
+    on-headers "~1.0.1"
+    parseurl "~1.3.1"
+    uid-safe "~2.1.1"
     utils-merge "1.0.0"
 
-express.oi@^0.0.19:
-  version "0.0.19"
-  resolved "https://registry.yarnpkg.com/express.oi/-/express.oi-0.0.19.tgz#8dfa1b4464a1f253bc5ff64d29b137bffc3ded9d"
+express.oi@^0.0.21:
+  version "0.0.21"
+  resolved "https://registry.yarnpkg.com/express.oi/-/express.oi-0.0.21.tgz#8dfa1b4464a1f253bc5ff64d29b137bffc3ded9d"
   dependencies:
-    async "^1.0.0"
-    cookie-parser "^1.3.5"
-    express "^4.12.3"
-    express-session "~1.11.2"
-    lodash "^3.9.1"
-    socket.io "^1.3.5"
+    cookie-parser "^1.4.3"
+    express "^4.14.0"
+    express-session "^1.14.0"
+    express-socket.io-session "^1.3.1"
+    lodash "^4.13.1"
+    socket.io "^1.4.8"
 
 express@^4.12.3:
   version "4.15.4"
@@ -3326,53 +3323,29 @@ moment@^2.10.6:
   version "2.18.1"
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.18.1.tgz#c36193dd3ce1c2eed2adb7c802dbbc77a81b1c0f"
 
-mongodb-core@1.2.31:
-  version "1.2.31"
-  resolved "https://registry.yarnpkg.com/mongodb-core/-/mongodb-core-1.2.31.tgz#f1e6405f03d40846fdb838a702507affa3cb2c39"
-  dependencies:
-    bson "~0.4.20"
-
-mongodb-core@2.1.14:
-  version "2.1.14"
-  resolved "https://registry.yarnpkg.com/mongodb-core/-/mongodb-core-2.1.14.tgz#13cba2764226b5be3d18992af0c963ce5ea0f0fd"
+mongodb-core@2.1.18:
+  version "2.1.18"
+  resolved "https://registry.yarnpkg.com/mongodb-core/-/mongodb-core-2.1.18.tgz#4c46139bdf3a1f032ded91db49f38eec01659050"
   dependencies:
     bson "~1.0.4"
     require_optional "~1.0.0"
 
-mongodb-core@2.1.15:
-  version "2.1.15"
-  resolved "https://registry.yarnpkg.com/mongodb-core/-/mongodb-core-2.1.15.tgz#841f53b87ffff4c7458189c35c8ae827e1169764"
-  dependencies:
-    bson "~1.0.4"
-    require_optional "~1.0.0"
-
-mongodb@2.2.30:
-  version "2.2.30"
-  resolved "https://registry.yarnpkg.com/mongodb/-/mongodb-2.2.30.tgz#8ccd801f676c8172040c2f2b47e9602a0d5634ab"
+"mongodb@>= 2.2.5 <2.2.35":
+  version "2.2.34"
+  resolved "https://registry.yarnpkg.com/mongodb/-/mongodb-2.2.34.tgz#a34f59bbeb61754aec432de72c3fe21526a44c1a"
   dependencies:
     es6-promise "3.2.1"
-    mongodb-core "2.1.14"
+    mongodb-core "2.1.18"
     readable-stream "2.2.7"
 
-"mongodb@>= 1.2.0 <2.1.0":
-  version "2.0.55"
-  resolved "https://registry.yarnpkg.com/mongodb/-/mongodb-2.0.55.tgz#a09dd77259f6bba69f7dd592a011c11aa5761097"
+mongoose-unique-validator@~0.6.2:
+  version "0.6.2"
+  resolved "https://registry.yarnpkg.com/mongoose-unique-validator/-/mongoose-unique-validator-0.6.2.tgz#273bb48a9679fcd1f70e6aabb80ab52153de4820"
   dependencies:
-    es6-promise "2.1.1"
-    mongodb-core "1.2.31"
-    readable-stream "1.0.31"
-
-mongodb@^2.2.25:
-  version "2.2.31"
-  resolved "https://registry.yarnpkg.com/mongodb/-/mongodb-2.2.31.tgz#1940445c661e19217bb3bf8245d9854aaef548db"
-  dependencies:
-    es6-promise "3.2.1"
-    mongodb-core "2.1.15"
-    readable-stream "2.2.7"
-
-mongoose-unique-validator@~0.4.1:
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/mongoose-unique-validator/-/mongoose-unique-validator-0.4.1.tgz#f679c737b85455bc12bc85ad6dd180fa2d4d5682"
+    bluebird "^2.10.2"
+    chai "^3.3.0"
+    eslint "^1.6.0"
+    mocha "^2.3.3"
 
 "mongoose-validate@https://github.com/Codefresh-Examples/mongoose-validate.git":
   version "0.0.5"
@@ -3380,20 +3353,21 @@ mongoose-unique-validator@~0.4.1:
   dependencies:
     validator "0.4.x"
 
-mongoose@^4.11.6:
-  version "4.11.6"
-  resolved "https://registry.yarnpkg.com/mongoose/-/mongoose-4.11.6.tgz#d0ebdd5f5f34fca9b0f1b86e13cf7e532e939a09"
+mongoose@^4.13.11:
+  version "4.13.11"
+  resolved "https://registry.yarnpkg.com/mongoose/-/mongoose-4.13.11.tgz#da6edf8e399054e12836016316999519a358db43"
   dependencies:
     async "2.1.4"
     bson "~1.0.4"
-    hooks-fixed "2.0.0"
+    hooks-fixed "2.0.2"
     kareem "1.5.0"
-    mongodb "2.2.30"
+    lodash.get "4.4.2"
+    mongodb "2.2.34"
     mpath "0.3.0"
     mpromise "0.5.5"
-    mquery "2.3.1"
+    mquery "2.3.3"
     ms "2.0.0"
-    muri "1.2.2"
+    muri "1.3.0"
     regexp-clone "0.0.1"
     sliced "1.0.1"
 
